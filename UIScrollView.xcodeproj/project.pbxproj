@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2924EF121BFEE5730011B817 /* TapToScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 2924EF101BFEE5730011B817 /* TapToScale.m */; };
+		2924EF131BFEE5730011B817 /* TapToScale.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2924EF111BFEE5730011B817 /* TapToScale.xib */; };
 		29594D2D1BFB0E33009F2F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29594D2C1BFB0E33009F2F6D /* main.m */; };
 		29594D381BFB0E33009F2F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29594D371BFB0E33009F2F6D /* Assets.xcassets */; };
 		29594D461BFB0E33009F2F6D /* UIScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29594D451BFB0E33009F2F6D /* UIScrollViewTests.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2924EF0F1BFEE5730011B817 /* TapToScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapToScale.h; sourceTree = "<group>"; };
+		2924EF101BFEE5730011B817 /* TapToScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapToScale.m; sourceTree = "<group>"; };
+		2924EF111BFEE5730011B817 /* TapToScale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapToScale.xib; sourceTree = "<group>"; };
 		29594D281BFB0E33009F2F6D /* UIScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29594D2C1BFB0E33009F2F6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29594D371BFB0E33009F2F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 		29594D6A1BFB0EE5009F2F6D /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				29FFF7DD1BFDCCA300BB00DC /* Tap To Scale */,
 				29FFF7D71BFD782400BB00DC /* Content Size */,
 				29D8F7551BFB2CC600112372 /* UIScrollView With Slider */,
 				29D8F7541BFB2CA200112372 /* UIScrollView Basic */,
@@ -195,6 +201,16 @@
 				29FFF7D91BFD784300BB00DC /* ContentSize.m */,
 			);
 			name = "Content Size";
+			sourceTree = "<group>";
+		};
+		29FFF7DD1BFDCCA300BB00DC /* Tap To Scale */ = {
+			isa = PBXGroup;
+			children = (
+				2924EF0F1BFEE5730011B817 /* TapToScale.h */,
+				2924EF101BFEE5730011B817 /* TapToScale.m */,
+				2924EF111BFEE5730011B817 /* TapToScale.xib */,
+			);
+			name = "Tap To Scale";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +280,7 @@
 				TargetAttributes = {
 					29594D271BFB0E33009F2F6D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7R8ZB7V7RS;
 					};
 					29594D401BFB0E33009F2F6D = {
 						CreatedOnToolsVersion = 7.0;
@@ -303,6 +320,7 @@
 				29594D381BFB0E33009F2F6D /* Assets.xcassets in Resources */,
 				29594D6F1BFB1140009F2F6D /* HD.jpg in Resources */,
 				29FFF7DC1BFD784C00BB00DC /* people.jpg in Resources */,
+				2924EF131BFEE5730011B817 /* TapToScale.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +349,7 @@
 				29594D691BFB0E6E009F2F6D /* MainScreen.m in Sources */,
 				29594D661BFB0E6E009F2F6D /* BootLogic.m in Sources */,
 				29D8F7581BFB2D0000112372 /* UIScrollViewWithSlider.m in Sources */,
+				2924EF121BFEE5730011B817 /* TapToScale.m in Sources */,
 				29594D2D1BFB0E33009F2F6D /* main.m in Sources */,
 				29594D671BFB0E6E009F2F6D /* ConsoleScreen.m in Sources */,
 				29FFF7DA1BFD784300BB00DC /* ContentSize.m in Sources */,
@@ -456,10 +475,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HT.UIScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -467,10 +490,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HT.UIScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
