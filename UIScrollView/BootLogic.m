@@ -19,7 +19,8 @@
                                     @{TITLE: @"Scroll View", CLASS: @"ScrollView"},
                                     @{TITLE: @"UIScrollView With Slider", CLASS: @"UIScrollViewWithSlider"},
                                     @{TITLE: @"Content Size Basic", CLASS: @"ContentSize"},
-                                    @{TITLE: @"Tap To Scale", CLASS: @"TapToScale"}
+                                    @{TITLE: @"Tap To Scale", CLASS: @"TapToScale"},
+                                    @{TITLE: @"Paging Scroll View", CLASS: @"PagingScrollView"}
 
                                 
 

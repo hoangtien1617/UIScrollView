@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291B372A1C02B7A9006A5A4C /* PagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291B37291C02B7A9006A5A4C /* PagingScrollView.m */; };
+		291B372E1C02C060006A5A4C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 291B372D1C02C060006A5A4C /* 1.jpg */; };
+		291B37301C02C065006A5A4C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 291B372F1C02C065006A5A4C /* 2.jpg */; };
+		291B37341C02C06C006A5A4C /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 291B37331C02C06C006A5A4C /* 4.jpg */; };
+		291B37361C02C06F006A5A4C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 291B37351C02C06F006A5A4C /* 3.jpg */; };
+		291B37381C02C072006A5A4C /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 291B37371C02C072006A5A4C /* 5.jpg */; };
 		2924EF121BFEE5730011B817 /* TapToScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 2924EF101BFEE5730011B817 /* TapToScale.m */; };
 		2924EF131BFEE5730011B817 /* TapToScale.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2924EF111BFEE5730011B817 /* TapToScale.xib */; };
 		29594D2D1BFB0E33009F2F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29594D2C1BFB0E33009F2F6D /* main.m */; };
@@ -42,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		291B37281C02B7A9006A5A4C /* PagingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollView.h; sourceTree = "<group>"; };
+		291B37291C02B7A9006A5A4C /* PagingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingScrollView.m; sourceTree = "<group>"; };
+		291B372D1C02C060006A5A4C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = samplePhoto/1.jpg; sourceTree = "<group>"; };
+		291B372F1C02C065006A5A4C /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = samplePhoto/2.jpg; sourceTree = "<group>"; };
+		291B37331C02C06C006A5A4C /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = samplePhoto/4.jpg; sourceTree = "<group>"; };
+		291B37351C02C06F006A5A4C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = samplePhoto/3.jpg; sourceTree = "<group>"; };
+		291B37371C02C072006A5A4C /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = samplePhoto/5.jpg; sourceTree = "<group>"; };
 		2924EF0F1BFEE5730011B817 /* TapToScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapToScale.h; sourceTree = "<group>"; };
 		2924EF101BFEE5730011B817 /* TapToScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapToScale.m; sourceTree = "<group>"; };
 		2924EF111BFEE5730011B817 /* TapToScale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapToScale.xib; sourceTree = "<group>"; };
@@ -166,12 +179,27 @@
 		29594D6A1BFB0EE5009F2F6D /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				296F7E191C02B39600A756DA /* Paging ScrollView */,
 				29FFF7DD1BFDCCA300BB00DC /* Tap To Scale */,
 				29FFF7D71BFD782400BB00DC /* Content Size */,
 				29D8F7551BFB2CC600112372 /* UIScrollView With Slider */,
 				29D8F7541BFB2CA200112372 /* UIScrollView Basic */,
 			);
 			name = Basic;
+			sourceTree = "<group>";
+		};
+		296F7E191C02B39600A756DA /* Paging ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				291B372D1C02C060006A5A4C /* 1.jpg */,
+				291B372F1C02C065006A5A4C /* 2.jpg */,
+				291B37351C02C06F006A5A4C /* 3.jpg */,
+				291B37331C02C06C006A5A4C /* 4.jpg */,
+				291B37371C02C072006A5A4C /* 5.jpg */,
+				291B37281C02B7A9006A5A4C /* PagingScrollView.h */,
+				291B37291C02B7A9006A5A4C /* PagingScrollView.m */,
+			);
+			name = "Paging ScrollView";
 			sourceTree = "<group>";
 		};
 		29D8F7541BFB2CA200112372 /* UIScrollView Basic */ = {
@@ -317,9 +345,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291B37381C02C072006A5A4C /* 5.jpg in Resources */,
 				29594D381BFB0E33009F2F6D /* Assets.xcassets in Resources */,
 				29594D6F1BFB1140009F2F6D /* HD.jpg in Resources */,
+				291B37301C02C065006A5A4C /* 2.jpg in Resources */,
+				291B372E1C02C060006A5A4C /* 1.jpg in Resources */,
+				291B37361C02C06F006A5A4C /* 3.jpg in Resources */,
 				29FFF7DC1BFD784C00BB00DC /* people.jpg in Resources */,
+				291B37341C02C06C006A5A4C /* 4.jpg in Resources */,
 				2924EF131BFEE5730011B817 /* TapToScale.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29594D681BFB0E6E009F2F6D /* AppDelegate.m in Sources */,
+				291B372A1C02B7A9006A5A4C /* PagingScrollView.m in Sources */,
 				29594D691BFB0E6E009F2F6D /* MainScreen.m in Sources */,
 				29594D661BFB0E6E009F2F6D /* BootLogic.m in Sources */,
 				29D8F7581BFB2D0000112372 /* UIScrollViewWithSlider.m in Sources */,
